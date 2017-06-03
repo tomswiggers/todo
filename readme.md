@@ -1,5 +1,7 @@
 # Todo
 
-Add lines in todo.txt
+Add items in a todo list with todo.txt format.
 
+# Install
 
+go build todo.go
