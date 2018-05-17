@@ -60,9 +60,12 @@ func main() {
   f, err := os.Open(*filename)
   check(err)
 
-  if cmd == "ls" {
+  switch cmd {
+  case "ls":
     ls(f)
-  } else if (cmd == "add") {
+  case "add":
     add(filename, args)
+  default:
+    fmt.Println("Invalid command")
   }
 }
